@@ -31,8 +31,8 @@ CREATE TABLE `account_nyepeda` (
 /*Data for the table `account_nyepeda` */
 
 insert  into `account_nyepeda`(`user_id`,`nama`,`email`,`kata_sandi`) values 
-(2,'kimit','kimit1208@gmail.com','tlogowero01'),
-(3,'febykimit','febykimit12@gmail.com','tlogowero04'),
+(2,'kimit','kimit1208@gmail.com','halohalo'),
+(3,'febykimit','febykimit12@gmail.com','qwerty123'),
 (6,'sinta','sintawatikusuma@gmail.com','sintawati');
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
