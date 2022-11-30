@@ -10,7 +10,7 @@ const conn = mysql.createConnection({
     host: 'localhost',
     user: 'root',
     password: '',
-    database: 'nyepeda_db'
+    database: 'db_nyepedda'
 });
 
 conn.connect((err) => {
@@ -75,6 +75,6 @@ app.delete('/api/users/:id',(req,res)=>{
 });
 
 
-app.listen(3000,() => {
+app.listen(340,() => {
     console.log("MYSQL BERJALAN")
 })
