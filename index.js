@@ -75,6 +75,6 @@ app.delete('/api/users/:id',(req,res)=>{
 });
 
 
-app.listen(443,() => {
+app.listen(3001,() => {
     console.log("MYSQL BERJALAN")
 })
