@@ -11,8 +11,8 @@ const conn = mysql.createConnection({
     user: 'root',
     password: '',
     database: 'db_nyepedda'
-});
-
+});db_nyepedda
+db_nyepedda
 conn.connect((err) => {
     if(err) throw err;
     console.log('mysql Connected...');
