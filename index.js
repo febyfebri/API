@@ -36,6 +36,16 @@ app.get('/api/users/:id',(req,res)=>{
     });
 });
 
+//data email
+app.get('/api/users/email',(req,res)=>{
+    let sql = "SELECT * FROM account_nyepeda WHERE email="+req.params.email;
+    let query = conn.query(sql, (err,result) => {
+        if(err) throw err;
+        res.send(JSON.stringify({"status": 200, "error": null, "response":result}));
+    });
+});
+
+
 //create data baru
 app.post('/api/users',(req,res)=>{
     let data = {nama: req.body.nama, 
