@@ -37,7 +37,7 @@ app.get('/api/users/:id',(req,res)=>{
 });
 
 //data email
-app.get('/api/users/:email',(req,res)=>{
+app.get('/api/users/email',(req,res)=>{
     let sql = "SELECT * FROM account_nyepeda WHERE email="+req.body.email;
     let query = conn.query(sql, (err,result) => {
         if(err) throw err;
