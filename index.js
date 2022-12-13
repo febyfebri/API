@@ -46,6 +46,7 @@ app.get('/api/users/email',(req,res)=>{
 });
 
 
+
 //create data baru
 app.post('/api/users',(req,res)=>{
     let data = {nama: req.body.nama, 
