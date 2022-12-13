@@ -38,7 +38,7 @@ app.get('/api/users/:id',(req,res)=>{
 
 //data email
 app.get('/api/users/nama',(req,res)=>{
-    let sql = "SELECT nama FROM account_nyepeda";
+    let sql = "SELECT * FROM account_nyepeda WHERE nama";
     let query = conn.query(sql, (err,result) => {
         if(err) throw err;
         res.send(JSON.stringify({"status": 200, "error": null, "response":result}));
