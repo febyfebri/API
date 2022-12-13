@@ -37,8 +37,8 @@ app.get('/api/users/:id',(req,res)=>{
 });
 
 //data email
-app.get('/api/emails',(req,res)=>{
-    let sql = "SELECT * from account_nyepeda WHERE email REGEXP '^[A-Za-z0-9._%\-+!#$&/=?^|~]+@[A-Za-z0-9.-]+[.][A-Za-z]+$';";
+app.get('/api/users/email/',(req,res)=>{
+    let sql = "SELECT email FROM account_nyepeda";
     let query = conn.query(sql, (err,result) => {
         if(err) throw err;
         res.send(JSON.stringify({"status": 200, "error": null, "response":result}));
